@@ -15,7 +15,7 @@ module.exports = function (src, opts, fn) {
   var uri = url.parse(opts.destination)
   var params = [
     '-az',
-    process.platform === 'win32' ? pathFn.basename(src) + '/' : src,
+    (process.platform === 'win32' ? pathFn.basename(src) : src) + '/',
     (uri.username ? uri.username + '@' : '') + uri.hostname + ':' + uri.pathname
   ]
 
