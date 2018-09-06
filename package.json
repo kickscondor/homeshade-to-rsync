@@ -1,6 +1,6 @@
 {
   "name": "homeshade-to-rsync",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Rsync output plugin for Homeshade.",
   "main": "index.js",
   "scripts": {

@@ -13,8 +13,6 @@ module.exports = function (src, opts, fn) {
   if (!opts.hasOwnProperty('ignore_errors')) opts.ignore_errors = false
 
   var uri = url.parse(opts.destination)
-  var host = uri.hostname + ':' + uri.pathname
-  if (
   var params = [
     '-az',
     process.platform === 'win32' ? pathFn.basename(src) + '/' : src,
